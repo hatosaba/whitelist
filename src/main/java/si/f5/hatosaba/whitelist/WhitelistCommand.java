@@ -13,6 +13,11 @@ public class WhitelistCommand implements CommandHandler {
     )
     public void whitelist(CommandSender sender) {
         Whitelist.plugin().toggleWhitelist();
+        if(Whitelist.plugin().isWhitelist()){
+            sender.sendMessage("ホワイトリストを有効にしました");
+        }else {
+            sender.sendMessage("ホワイトリストを無効にしました");
+        }
     }
 
 }
