@@ -75,10 +75,9 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>dev.jorel.CommandAPI</groupId>
-            <artifactId>commandapi-core</artifactId>
-            <version>6.3.1</version>
-            <scope>provided</scope>
+            <groupId>com.github.Elic0de</groupId>
+            <artifactId>SpigotCommandLib</artifactId>
+            <version>deabc8f9be</version>
         </dependency>
     </dependencies>
 </project>
