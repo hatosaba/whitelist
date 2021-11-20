@@ -1,6 +1,7 @@
 package si.f5.hatosaba.whitelist;
 
 import com.github.elic0de.spigotcommandlib.registry.CommandLib;
+import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class Whitelist extends JavaPlugin {
@@ -24,6 +25,9 @@ public final class Whitelist extends JavaPlugin {
         config = new WhitelistConfig("config.yml");
         isWhitelist = config.isWhitelist();
         getServer().getPluginManager().registerEvents(new WhitelistListener(), this);
+
+        //既存のホワリス機能を無効に
+        Bukkit.setWhitelist(false);
     }
 
     @Override
