@@ -7,14 +7,12 @@ import org.bukkit.command.CommandSender;
 public class WhitelistCommand implements CommandHandler {
 
     @CommandHandle(
-            command = "whitelist",
+            command = "toggleWhitelist",
             permission = "perm.whitelist",
             description = "ホワリス"
     )
-    public void whitelist(CommandSender sender, boolean bool) {
-        if(bool) {
-            Whitelist.plugin().isWhitelist() = true;
-        }
+    public void whitelist(CommandSender sender) {
+        Whitelist.plugin().toggleWhitelist();
     }
 
 }
