@@ -14,8 +14,24 @@ public class WhitelistListener implements Listener {
 
         if (Whitelist.plugin().isWhitelist()) {
             if (player.hasPermission("perm.whitelist")) return;
-
             e.disallow(PlayerLoginEvent.Result.KICK_WHITELIST, "ホワイトリストに登録されていません");
         }
+
+        /* 圧 倒 的 技 術 力 不 足で実装できん
+        if (Whitelist.plugin().isWhitelist()) {
+            if (player.hasPermission("hatosaba.admin")) {
+                player.sendMessage(
+                        "§e----------------------" +
+                                "\n ホワイトリストは§a有効§rです" +
+                                "\n§e----------------------");
+            }
+        } else {
+            if (player.hasPermission("hatosaba.admin")) {
+                player.sendMessage(
+                        "§e----------------------" +
+                                "\n ホワイトリストは§c無効§rです" +
+                                "\n§e----------------------");
+            }
+        }*/
     }
 }

@@ -1,3 +1,7 @@
 name: Whitelist
 version: ${project.version}
 main: si.f5.hatosaba.whitelist.Whitelist
+
+permissions:
+  hatosaba.admin:
+    default: op
