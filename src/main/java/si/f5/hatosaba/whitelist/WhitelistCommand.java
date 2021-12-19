@@ -4,6 +4,9 @@ import com.github.elic0de.spigotcommandlib.CommandHandle;
 import com.github.elic0de.spigotcommandlib.CommandHandler;
 import org.bukkit.command.CommandSender;
 
+import static org.bukkit.ChatColor.*;
+import static org.bukkit.ChatColor.YELLOW;
+
 public class WhitelistCommand implements CommandHandler {
 
     @CommandHandle(
@@ -13,12 +16,15 @@ public class WhitelistCommand implements CommandHandler {
     )
     public void whitelist(CommandSender sender) {
         Whitelist.plugin().toggleWhitelist();
-        if(Whitelist.plugin().isWhitelist()){
-            sender.sendMessage("ホワイトリストを§a§l有効§rにしました" +
-                    "\n§e----------------------");
+
+        if (Whitelist.plugin().isWhitelist()) {
+            sender.sendMessage("§e----------------------\n" +
+                    " ホワイトリストは" + RED + "有効" + RESET + "です" +
+                    "----------------------");
         }else {
-            sender.sendMessage("ホワイトリストを§c§l無効§rにしました" +
-                    "\n§e----------------------");
+            sender.sendMessage(YELLOW + "----------------------\n" +
+                    " ホワイトリストは§c無効§rです\n" +
+                    YELLOW +"----------------------");
         }
     }
 
