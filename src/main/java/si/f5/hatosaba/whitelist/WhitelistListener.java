@@ -27,12 +27,14 @@ public class WhitelistListener implements Listener {
         Player player = event.getPlayer();
         if(player.hasPermission("perm.whitelist")) {
             if (Whitelist.plugin().isWhitelist()) {
-                player.sendMessage(YELLOW + "+----------------------+\n" +
-                        " ホワイトリストは" + GREEN + "有効" + RESET + "です\n" +
+                player.sendMessage(
+                        YELLOW + "+----------------------+\n" +
+                        RESET + " ホワイトリストは" + GREEN + "有効" + RESET + "です\n" +
                         YELLOW + "+----------------------+");
             }else {
-                player.sendMessage(YELLOW + "+----------------------+\n" +
-                        " ホワイトリストは" + RED + "無効" + RESET + "です\n" +
+                player.sendMessage(
+                        YELLOW + "+----------------------+\n" +
+                        RESET + " ホワイトリストは" + RED + "無効" + RESET + "です\n" +
                         YELLOW + "+----------------------+");
             }
         }
