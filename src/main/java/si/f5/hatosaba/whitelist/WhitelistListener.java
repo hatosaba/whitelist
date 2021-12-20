@@ -25,15 +25,15 @@ public class WhitelistListener implements Listener {
     @EventHandler
     public void onJoin(PlayerJoinEvent event) {
         Player player = event.getPlayer();
-        if(player.hasPermission("hatosaba.admin")) {
+        if(player.hasPermission("perm.whitelist")) {
             if (Whitelist.plugin().isWhitelist()) {
-                player.sendMessage("§e----------------------\n" +
-                        " ホワイトリストは" + RED + "有効" + RESET + "です" +
-                        "----------------------");
+                player.sendMessage(YELLOW + "+----------------------+\n" +
+                        " ホワイトリストは" + GREEN + "有効" + RESET + "です\n" +
+                        YELLOW + "+----------------------+");
             }else {
-                player.sendMessage(YELLOW + "----------------------\n" +
-                        " ホワイトリストは§c無効§rです\n" +
-                        YELLOW +"----------------------");
+                player.sendMessage(YELLOW + "+----------------------+\n" +
+                        " ホワイトリストは" + RED + "無効" + RESET + "です\n" +
+                        YELLOW + "+----------------------+");
             }
         }
     }

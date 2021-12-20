@@ -18,13 +18,13 @@ public class WhitelistCommand implements CommandHandler {
         Whitelist.plugin().toggleWhitelist();
 
         if (Whitelist.plugin().isWhitelist()) {
-            sender.sendMessage("§e----------------------\n" +
-                    " ホワイトリストは" + RED + "有効" + RESET + "です" +
-                    "----------------------");
+            sender.sendMessage(YELLOW + "+----------------------+\n" +
+                    " ホワイトリストを" + GREEN + "有効" + RESET + "にしました\n" +
+                    YELLOW + "+----------------------+");
         }else {
-            sender.sendMessage(YELLOW + "----------------------\n" +
-                    " ホワイトリストは§c無効§rです\n" +
-                    YELLOW +"----------------------");
+            sender.sendMessage(YELLOW + "+----------------------+\n" +
+                    " ホワイトリストを" + RED + "無効" + RESET + "にしました\n" +
+                    YELLOW + "+----------------------+");
         }
     }
 
