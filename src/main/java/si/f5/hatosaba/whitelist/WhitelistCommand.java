@@ -10,7 +10,7 @@ import static org.bukkit.ChatColor.YELLOW;
 public class WhitelistCommand implements CommandHandler {
 
     @CommandHandle(
-            command = "toggleWhitelist",
+            command = "whitelist",
             permission = "perm.toggle-whitelist",
             description = "ホワリス"
     )
