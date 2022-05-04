@@ -79,5 +79,10 @@
             <artifactId>SpigotCommandLib</artifactId>
             <version>deabc8f9be</version>
         </dependency>
+        <dependency>
+            <groupId>com.github.cryptomorin</groupId>
+            <artifactId>XSeries</artifactId>
+            <version>8.7.1</version>
+        </dependency>
     </dependencies>
 </project>

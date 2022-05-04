@@ -1,5 +1,6 @@
 package si.f5.hatosaba.whitelist;
 
+import com.cryptomorin.xseries.XSound;
 import org.bukkit.ChatColor;
 import org.bukkit.Sound;
 import org.bukkit.entity.Player;
@@ -42,7 +43,7 @@ public class WhitelistListener implements Listener {
                                         RESET + " ホワイトリストは" + RED + "無効" + RESET + "です\n" +
                                         YELLOW + "+----------------------+");
                     }
-                    player.playSound(player.getLocation(), Sound.LEVEL_UP, 1F, 2F);
+                    XSound.ENTITY_PLAYER_LEVELUP.play(player, 1F, 2F);
                 }
             }
         }.runTaskLater(Whitelist.plugin(),  5 + 20L);

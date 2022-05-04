@@ -1,3 +1,4 @@
 name: Whitelist
 version: ${project.version}
 main: si.f5.hatosaba.whitelist.Whitelist
+api-version: "1.13"
