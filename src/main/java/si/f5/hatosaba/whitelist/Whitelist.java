@@ -45,10 +45,6 @@ public final class Whitelist extends JavaPlugin {
     }
 
     public void toggleWhitelist() {
-        if (isWhitelist == true) {
-            isWhitelist = false;
-        } else {
-            isWhitelist = true;
-        }
+        isWhitelist = !isWhitelist;
     }
 }
